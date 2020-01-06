@@ -98,4 +98,44 @@ class TestController extends Controller
         echo 'count: '.$count;
     }
 
+
+    public function abc()
+    {
+        $char='Hello goodbye';
+        $length=strlen($char);
+        echo $length;
+        echo'</br>';
+
+        $pass="";
+        for ($i=0;$i<$length;$i++)
+        {
+            echo $char[$i].'>>>'.ord($char[$i]);echo'</br>';
+            $ord=ord($char[$i])+3;
+            $chr=chr($ord);
+            echo $char[$i].'>>>'.$ord.'>>>'.$chr;echo'</br>';
+            $pass .=$chr;
+        }
+        echo '</br>';
+        echo $pass;
+    }
+
+    public function cba()
+    {
+        $enc='Khoor#jrrge|h';
+        echo $enc;
+        echo'</br>';
+        $length=strlen($enc);
+
+        $str="";
+        for ($i=0;$i<$length;$i++)
+        {
+
+            $ord=ord($enc[$i])-3;
+            $chr=chr($ord);
+            echo $ord.'>>>'.$chr;echo'</br>';
+            $str .=$chr;
+        }
+
+        echo $str;
+    }
 }
