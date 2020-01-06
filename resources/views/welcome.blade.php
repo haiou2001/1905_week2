@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    API-1905
+                    1905_WEEK
                 </div>
 
                 <div class="links">
